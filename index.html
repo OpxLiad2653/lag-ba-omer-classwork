@@ -6,43 +6,69 @@
 
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background: #f2f2f2;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(135deg, #1e1e2f, #3a3a5c, #5a5a8a);
+            background-size: 400% 400%;
+            animation: bgMove 12s ease infinite;
             direction: rtl;
             text-align: center;
             padding: 20px;
+            color: white;
+        }
+
+        @keyframes bgMove {
+            0% {background-position: 0% 50%;}
+            50% {background-position: 100% 50%;}
+            100% {background-position: 0% 50%;}
         }
 
         h1 {
-            color: #333;
+            font-size: 40px;
+            margin-bottom: 10px;
+            color: #ffdd57;
+            text-shadow: 0 0 10px #000;
         }
 
-        p, h2, h3, h4 {
-            color: #444;
-            max-width: 700px;
+        h2, h3, h4, p {
+            max-width: 800px;
             margin: auto;
-            line-height: 1.6;
-        }
-
-        button {
-            background: #4CAF50;
-            color: white;
-            border: none;
-            padding: 12px 20px;
-            margin: 10px;
-            border-radius: 8px;
-            cursor: pointer;
-            font-size: 16px;
-            transition: 0.3s;
-        }
-
-        button:hover {
-            background: #45a049;
-            transform: scale(1.05);
+            line-height: 1.7;
+            font-size: 18px;
         }
 
         .section {
             margin-top: 40px;
+            padding: 20px;
+            background: rgba(255,255,255,0.08);
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.3);
+        }
+
+        button {
+            background: linear-gradient(135deg, #ff7b00, #ffbb00);
+            color: #1e1e2f;
+            border: none;
+            padding: 14px 25px;
+            margin: 10px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: bold;
+            transition: 0.3s;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+        }
+
+        button:hover {
+            transform: scale(1.08);
+            background: linear-gradient(135deg, #ffbb00, #ff7b00);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.6);
+        }
+
+        footer {
+            margin-top: 50px;
+            padding: 20px;
+            font-size: 16px;
+            opacity: 0.8;
         }
     </style>
 </head>
@@ -108,10 +134,10 @@
         </button>
     </div>
 
-    <p>
+    <footer>
         מייל משרדי: <b>opxliad@outlook.com</b><br>
         מייל אישי: <b>opxliad@gmail.com</b>
-    </p>
+    </footer>
 
 </body>
 </html>
